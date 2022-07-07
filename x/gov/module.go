@@ -4,19 +4,20 @@ package gov
 
 import (
 	"context"
-	modulev1 "cosmossdk.io/api/cosmos/gov/module/v1"
-	"cosmossdk.io/core/appmodule"
 	"encoding/json"
 	"fmt"
+	"math/rand"
+	"sort"
+
+	modulev1 "cosmossdk.io/api/cosmos/gov/module/v1"
+	"cosmossdk.io/core/appmodule"
+	"cosmossdk.io/depinject"
 	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/depinject"
 	"github.com/cosmos/cosmos-sdk/runtime"
 	store "github.com/cosmos/cosmos-sdk/store/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
-	"math/rand"
-	"sort"
 
 	gwruntime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/spf13/cobra"

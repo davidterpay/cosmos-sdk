@@ -12,7 +12,7 @@ import (
 
 	modulev1 "cosmossdk.io/api/cosmos/staking/module/v1"
 	"cosmossdk.io/core/appmodule"
-	"github.com/cosmos/cosmos-sdk/depinject"
+	"cosmossdk.io/depinject"
 	"github.com/cosmos/cosmos-sdk/runtime"
 	store "github.com/cosmos/cosmos-sdk/store/types"
 	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
