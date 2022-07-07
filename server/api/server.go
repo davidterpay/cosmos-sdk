@@ -130,10 +130,10 @@ func (s *Server) registerGRPCGatewayRoutes() {
 }
 
 func (s *Server) SetTelemetry(m *telemetry.Metrics) {
-	s.mtx.Lock()
-	s.metrics = m
-	s.registerMetrics()
-	s.mtx.Unlock()
+	// s.mtx.Lock()
+	// s.metrics = m
+	// s.registerMetrics()
+	// s.mtx.Unlock()
 }
 
 func (s *Server) registerMetrics() {
