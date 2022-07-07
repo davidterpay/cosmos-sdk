@@ -503,7 +503,6 @@ func startInProcess(ctx *Context, clientCtx client.Context, appCreator types.App
 }
 
 func startTelemetry(cfg config.Config) (*telemetry.Metrics, error) {
-	return nil, nil
 	if !cfg.Telemetry.Enabled {
 		return nil, nil
 	}
